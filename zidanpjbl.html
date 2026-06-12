@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Profil dan Form</title>
+    <link rel="stylesheet" href="stylezidan.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header-colored">
+        <h1>Website Profil Saya</h1>
+    </header>
+
+    <nav>
+        <a href="#profil">Profil</a>
+        <a href="#tentang-saya">Tentang Saya</a>
+        <a href="#projek">Projek Saya</a> 
+        <a href="#form">Form Lengkap</a>
+        <a href="#hasilData">Data Terkirim</a>
+    </nav>
+
+    <main class="container">
+        
+        <section id="profil" class="profil-card">
+            <div class="profil-top">
+                <div class="profile-img-container">
+                    <img src="FOTOZIDAN.jpeg" alt="Foto Profil">
+                </div>
+                <div class="profil-info">
+                    <p><b>Nama:</b> Zidan Agil Nugroho</p>
+                    <p><b>Kelas:</b> X PPLG 1</p>
+                    <p><b>Sekolah:</b> SMK Negeri 1 Purbalingga</p>
+                    <p><b>Hobi:</b> Gaming dan Bersepeda</p>
+                    <p><b>Cita-cita:</b> Menjadi Pengusaha</p>
+                </div>
+            </div>
+            
+            <div id="tentang-saya" class="tentang-saya">
+                <h3>Tentang Saya</h3>
+                <p>
+                    Halo, saya adalah siswa dari SMK Negeri 1 Purbalingga yang saat ini
+                    berada di jurusan PPLG (Pengembangan Perangkat Lunak dan Gim).
+                    Saya senang belajar tentang komputer, pemrograman, dan teknologi.
+                    Saya memiliki hobi gaming karena saya suka bermain game untuk hiburan
+                    dan juga menambah wawasan tentang dunia digital. Selain itu, saya juga
+                    memiliki hobi bersepeda karena dapat membuat tubuh lebih sehat,
+                    menyegarkan pikiran, dan menjadi kegiatan yang menyenangkan di waktu luang.
+                    Saya bercita-cita menjadi seorang pengusaha yang sukses di bidang teknologi.
+                </p>
+            </div>
+
+            <div id="projek" class="projek-container">
+                <h3>Projek Saya</h3>
+                <div class="projek-grid">
+                    <div class="projek-box">
+                        <img src="web2.png" alt="Ilustrasi PPLG" class="img-responsive">
+                        <h4>Web Wisata Indonesia</h4>
+                        <p>Aplikasi berbasis web untuk menjelajahi dan menampilkan informasi destinasi wisata menarik secara interaktif.</p>
+                    </div>
+                    <div class="projek-box">
+                        <img src="game.png" alt="Ilustrasi PPLG" class="img-responsive">
+                        <h4>Game Scratch - Sky Defender: Alien Assault</h4>
+                        <p>Game sederhana yang dikembangkan menggunakan Scratch untuk melatih kemampuan berpikir strategi dan reaksi cepat.</p>
+                    </div>
+                    <div class="projek-box">
+                        <img src="hitung2.png" alt="Ilustrasi PPLG" class="img-responsive">
+                        <h4>Web Menghitung Bangun Datar</h4>
+                        <p>Web tools matematika untuk menghitung luas dan keliling berbagai macam bangun datar secara cepat dan akurat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="form" class="form-section">
+            <h2>Form Data Diri</h2>
+            <form id="dataForm">
+                <table>
+                    <tr>
+                        <td><label for="nama">Nama Lengkap</label></td>
+                        <td><input type="text" id="nama" size="40" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="alamat">Alamat</label></td>
+                        <td><textarea id="alamat" rows="4" cols="38" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tempatLahir">Tempat Lahir</label></td>
+                        <td><input type="text" id="tempatLahir" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tanggalLahir">Tanggal Lahir</label></td>
+                        <td><input type="date" id="tanggalLahir" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="nomorHp">Nomor HP</label></td>
+                        <td><input type="tel" id="nomorHp" pattern="[0-9]+" title="Hanya diperbolehkan memasukkan angka" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="email" id="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td><input type="password" id="password" required></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td class="radio-group">
+                            <label><input type="radio" name="jk" value="Laki-laki" checked> Laki-laki</label>
+                            <label><input type="radio" name="jk" value="Perempuan"> Perempuan</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="agama">Agama</label></td>
+                        <td>
+                            <select id="agama">
+                                <option value="Islam">Islam</option>
+                                <option value="Kristen">Kristen</option>
+                                <option value="Katolik">Katolik</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Buddha">Buddha</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hobi</td>
+                        <td class="checkbox-group">
+                            <label><input type="checkbox" name="hobi" value="Gaming"> Gaming</label>
+                            <label><input type="checkbox" name="hobi" value="Olahraga"> Olahraga</label>
+                            <label><input type="checkbox" name="hobi" value="Membaca"> Membaca</label>
+                            <label><input type="checkbox" name="hobi" value="Memasak"> Memasak</label>
+                            <label><input type="checkbox" name="hobi" value="Traveling"> Traveling</label>
+                            <label><input type="checkbox" name="hobi" value="Musik"> Musik</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <button type="submit" class="btn-submit" accesskey="s">Kirim Data</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+
+        <section id="hasilData" class="hasil-section">
+            <h2>Data Yang Dikirim</h2>
+            <div id="outputList">
+                <div class="no-data">Belum ada data yang dikirim.</div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>Ikuti saya di Instagram: <a href="https://www.instagram.com/danzz_x999?igsh=YTlzMWozeGFqNzg3" target="_blank">@danzz_x999</a></p>
+        <p>&copy; 2026 Zidan Agil Nugroho. All Rights Reserved.</p>
+    </footer>
+
+    <script src="pjbl.js"></script>
+</body>
+</html>
